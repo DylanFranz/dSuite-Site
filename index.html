@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dSuite — Tools for Live Theatre Production</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">dSuite</span>
+    <div class="nav-links">
+      <a href="#apps">Apps</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1>Custom-Built Apps for Theatre</h1>
+    <p class="hero-sub">A suite of macOS apps for live theatre — routing, monitoring, recording, and communication, built around a single show file and interoperable workflow.</p>
+    <div class="app-strip">
+      <span class="app-chip" style="--color: #33d8e6;">dRec</span>
+      <span class="app-chip" style="--color: #ff9933;">dPatch</span>
+      <span class="app-chip" style="--color: #66e680;">dWave</span>
+      <span class="app-chip" style="--color: #cc66ff;">dCom</span>
+      <span class="app-chip" style="--color: #ff5959;">dChat</span>
+      <span class="app-chip" style="--color: #3399ff;">dNet</span>
+      <span class="app-chip" style="--color: #aaaaaa;">dConfig</span>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="show-file">
+      <h2>One file, all your settings.</h2>
+      <p>Every tool in dSuite reads from the same <code>.dsuite</code> file. Your show's network addresses, OSC destinations, overlay layouts, RF channels - all in one place. Open it in dConfig, and every app is ready to be configured. Hand it off to show crew or production and they're ready to go.</p>
+    </section>
+
+    <section id="apps">
+      <h2>The apps</h2>
+
+      <div class="app-card" style="--color: #33d8e6;">
+        <div class="app-header">
+          <span class="app-name">dRec</span>
+          <span class="app-role">Show archival recording</span>
+        </div>
+        <p>Captures up to 2 cameras simultaniously with a customizable overlay burned directly into the video. The overlay pulls real-time data from EOS, QLab, TheatreMix, or a Yamaha console - scene names, DCA labels, & fader levels. Useful for mix notes, A1 sub training, archival footage, or anything where context matters later.</p>
+      </div>
+
+      <div class="app-card" style="--color: #ff9933;">
+        <div class="app-header">
+          <span class="app-name">dPatch</span>
+          <span class="app-role">Dante routing matrix</span>
+        </div>
+        <p>A soft-patch interface for mic swaps and more. When a transmitter goes down mid-show and you need to reroute a channel without touching the console, dPatch gives you a live view of your network and lets you make the swap in 2 clicks.</p>
+      </div>
+
+      <div class="app-card" style="--color: #66e680;">
+        <div class="app-header">
+          <span class="app-name">dWave</span>
+          <span class="app-role">RF microphone monitoring</span>
+        </div>
+        <p>Polls your wireless receivers for RF/battery info and keeps a rolling audio buffer for each channel. If something dropped and you need to know when, you can scrub back and hear it. Signal levels, battery, and silence alerts come through OSC so you can route them wherever they're useful.</p>
+      </div>
+
+      <div class="app-card" style="--color: #cc66ff;">
+        <div class="app-header">
+          <span class="app-name">dCom</span>
+          <span class="app-role">Com reader</span>
+        </div>
+        <p>Runs real-time speech-to-text on your com feed. You can set keywords (actor names, cue labels, etc) and they'll highlight and send OSC as they come through. The transcript logs to a file and can go out over OSC.</p>
+      </div>
+
+      <div class="app-card" style="--color: #ff5959;">
+        <div class="app-header">
+          <span class="app-name">dChat</span>
+          <span class="app-role">Show messaging</span>
+        </div>
+        <p>Peer-to-peer messaging for the production team. Useful for the A2 and the A1 to stay in sync. OSC based input and output triggers/macros for easy shorthand.</p>
+      </div>
+
+      <div class="app-card" style="--color: #3399ff;">
+        <div class="app-header">
+          <span class="app-name">dNet</span>
+          <span class="app-role">Network device monitor</span>
+        </div>
+        <p>Keeps an eye on all of your networked equipment and tells you when something goes offline. Device status changes go out over OSC so you can tie them into your cue system or just get an alert somewhere visible (native dChat support).</p>
+      </div>
+
+      <div class="app-card" style="--color: #aaaaaa;">
+        <div class="app-header">
+          <span class="app-name">dConfig</span>
+          <span class="app-role">Central configuration editor</span>
+        </div>
+        <p>The hub for managing your <code>.dsuite</code> show file. Everything you'd configure across all seven apps lives here in one tabbed editor. Start a new show, set your IP addresses and OSC destinations, and all the other tools will read from it automatically.</p>
+      </div>
+
+    </section>
+
+    <section id="about" class="about">
+      <h2>About</h2>
+      <p>I'm Dylan Franz. I work in live theatre, mostly . I built dSuite because the tools I needed either didn't exist or did not play together like I wanted.</p>
+      <p>dSuite has been used on productions ranging from off-Broadway to national tours. The apps are built natively for macOS and designed to run smoothly and reliably. Always open for ideas and feedback!</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Licensing</h2>
+      <p>dSuite is licensed per show. If you're interested in using it on an upcoming production, email me and we'll figure out the details.</p>
+      <a class="contact-link" href="mailto:dylan.m.franz@gmail.com">dylan.m.franz@gmail.com</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>© 2026 Dylan Franz</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
